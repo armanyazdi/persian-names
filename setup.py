@@ -14,7 +14,9 @@ setup(
     long_description=readme,
     long_description_content_type='text/markdown',
     install_requires=['requests'],
+    keywords='persian names, farsi names, iranian names, name generator',
     classifiers=[
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -23,7 +25,7 @@ setup(
         'Programming Language :: Python :: 3.11',
     ],
     project_urls={
-        'Documentation': 'https://pypi.org/project/persian-names',
         'Source': 'https://github.com/armanyazdi/persian-names',
+        'Documentation': 'https://pypi.org/project/persian-names',
     },
 )
