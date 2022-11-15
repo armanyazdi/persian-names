@@ -22,4 +22,8 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
     ],
+    project_urls={
+        'Documentation': 'https://pypi.org/project/persian-names',
+        'Source': 'https://github.com/armanyazdi/persian-names',
+    },
 )
