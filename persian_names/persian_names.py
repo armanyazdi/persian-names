@@ -12,7 +12,7 @@ def fullname_en(sex):
     else:
         return None
 
-    url = 'https://armanyazdi.com/projects/fake/name/'
+    url = 'https://raw.githubusercontent.com/armanyazdi/persian-names/main/persian_names/'
     file = ['male.txt', 'female.txt']
     isfx = ['', '', '', '', '', '', '', '', '', 'pour', 'zadeh', 'far', 'fard', 'an', 'kia', 'rad', 'zand', 'khah']
     nsfx = ['i', 'i', 'i', 'i', 'i', 'i', 'i', 'pour', 'zadeh', 'far', 'fard', 'khani', 'vand', 'lou']
@@ -60,7 +60,7 @@ def fullname_fa(sex):
     else:
         return None
 
-    url = 'https://armanyazdi.com/projects/fake/name/'
+    url = 'https://raw.githubusercontent.com/armanyazdi/persian-names/main/persian_names/'
     file = ['male_fa.txt', 'female_fa.txt']
     isfx = ['', '', '', '', '', '', '', '', '', ' پور', ' زاده', ' فر', ' فرد', 'ان', ' کیا', ' راد', ' زند', ' خواه']
     nsfx = ['ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', ' پور', ' زاده', ' فر', ' فرد', ' خانی', ' وند', ' لو']
