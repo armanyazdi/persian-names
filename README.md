@@ -13,7 +13,7 @@ Let's take a look at what an example test case would look like using `persian-na
 
 To generate a Persian name in English:
 
-```apache
+```python
 import persian_names as pn
 
 pn.fullname_en('male')
@@ -23,7 +23,7 @@ pn.fullname_en('random')
 
 To generate a Persian name in Farsi:
 
-```apache
+```python
 import persian_names as pn
 
 pn.fullname_fa('male')
