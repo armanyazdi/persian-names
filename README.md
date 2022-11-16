@@ -29,9 +29,9 @@ male = pn.fullname_fa('m')
 female = pn.fullname_fa('f')
 random = pn.fullname_fa('r')
 
-print('Male name: ', male)     # Male name: اشکان محمدرضائیان
-print('Female name: ', female) # Female name: مهسا امینی
-print('Random name: ', random) # Random name: بیتا خسروی راد
+print('Male name:', male)     # Male name: اشکان محمدرضائیان
+print('Female name:', female) # Female name: مهسا امینی
+print('Random name:', random) # Random name: بیتا خسروی راد
 ```
 
 #### Generate Persian names in English:
@@ -51,7 +51,7 @@ male = pn.fullname_en('m')
 female = pn.fullname_en('f')
 random = pn.fullname_en('r')
 
-print('Male name: ', male)     # Male name: Arsalan Mohammadi
-print('Female name: ', female) # Female name: Sara Alipour
-print('Random name: ', random) # Random name: Danial Ferdosi
+print('Male name:', male)     # Male name: Arsalan Mohammadi
+print('Female name:', female) # Female name: Sara Alipour
+print('Random name:', random) # Random name: Danial Ferdosi
 ```
