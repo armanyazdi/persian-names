@@ -13,7 +13,7 @@ def fullname_en(sex):
         return None
 
     path = os.path.dirname(__file__)
-    file = ['/male.txt', '/female.txt']
+    file = ['/data/male.txt', '/data/female.txt']
     isfx = ['', '', '', '', '', '', '', '', '', 'pour', 'zadeh', 'far', 'fard', 'an', 'kia', 'rad', 'zand', 'khah']
     nsfx = ['i', 'i', 'i', 'i', 'i', 'i', 'i', 'pour', 'zadeh', 'far', 'fard', 'khani', 'vand', 'lou']
 
@@ -63,7 +63,7 @@ def fullname_fa(sex):
         return None
 
     path = os.path.dirname(__file__)
-    file = ['/male_fa.txt', '/female_fa.txt']
+    file = ['/data/male_fa.txt', '/data/female_fa.txt']
     isfx = ['', '', '', '', '', '', '', '', '', ' پور', ' زاده', ' فر', ' فرد', 'ان', ' کیا', ' راد', ' زند', ' خواه']
     nsfx = ['ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', ' پور', ' زاده', ' فر', ' فرد', ' خانی', ' وند', ' لو']
 
