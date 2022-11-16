@@ -5,7 +5,7 @@ with open('./README.md', 'r') as f:
 
 setup(
     name='persian-names',
-    version='1.1.0',
+    version='1.1.1',
     packages=['persian_names'],
     url='https://github.com/armanyazdi/persian-names',
     license='MIT',
