@@ -1,4 +1,4 @@
-import requests
+import os
 from random import randint, randrange
 
 
@@ -12,18 +12,20 @@ def fullname_en(sex):
     else:
         return None
 
-    url = 'https://raw.githubusercontent.com/armanyazdi/persian-names/main/persian_names/'
-    file = ['male.txt', 'female.txt']
+    path = os.path.dirname(__file__)
+    file = ['/male.txt', '/female.txt']
     isfx = ['', '', '', '', '', '', '', '', '', 'pour', 'zadeh', 'far', 'fard', 'an', 'kia', 'rad', 'zand', 'khah']
     nsfx = ['i', 'i', 'i', 'i', 'i', 'i', 'i', 'pour', 'zadeh', 'far', 'fard', 'khani', 'vand', 'lou']
 
     def first(sex):
-        names = requests.get(f'{url}{file[sex]}').text.split('\n')
+        f = open(path + file[sex], 'r')
+        names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        names = requests.get(f'{url}{file[0]}').text.split('\n')
+        f = open(path + file[0], 'r')
+        names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last[1:] == 'ostafa' or last[1:] == 'ousa' or last[1:] == 'ahya':
             last += 'vi'
@@ -47,7 +49,7 @@ def fullname_en(sex):
             last += nsfx[randrange(len(nsfx))]
         return last
 
-    return f'{first(sex)} {last()}'
+    return first(sex) + ' ' + last()
 
 
 def fullname_fa(sex):
@@ -60,18 +62,20 @@ def fullname_fa(sex):
     else:
         return None
 
-    url = 'https://raw.githubusercontent.com/armanyazdi/persian-names/main/persian_names/'
-    file = ['male_fa.txt', 'female_fa.txt']
+    path = os.path.dirname(__file__)
+    file = ['/male_fa.txt', '/female_fa.txt']
     isfx = ['', '', '', '', '', '', '', '', '', ' پور', ' زاده', ' فر', ' فرد', 'ان', ' کیا', ' راد', ' زند', ' خواه']
     nsfx = ['ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', ' پور', ' زاده', ' فر', ' فرد', ' خانی', ' وند', ' لو']
 
     def first(sex):
-        names = requests.get(f'{url}{file[sex]}').text.split('\n')
+        f = open(path + file[sex], 'r')
+        names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        names = requests.get(f'{url}{file[0]}').text.split('\n')
+        f = open(path + file[0], 'r')
+        names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last == 'مرتضی' or last == 'مصطفی' or last == 'موسی':
             last = last.replace('ی', 'وی')
@@ -91,4 +95,4 @@ def fullname_fa(sex):
             last += nsfx[randrange(len(nsfx))]
         return last
 
-    return f'{first(sex)} {last()}'
+    return first(sex) + ' ' + last()
