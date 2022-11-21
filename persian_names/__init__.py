@@ -1,3 +1,11 @@
+'''
+persian-names
+A Python library for generating random Persian (Farsi) names.
+Copyright (c) 2022 Arman Yazdi
+MIT licensed
+https://github.com/armanyazdi/persian-names
+'''
+
 import os
 from random import randint, randrange
 
