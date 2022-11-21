@@ -33,7 +33,7 @@ print('Male name:', male)
 print('Female name:', female)
 print('Random name:', random)
 ```
-Example response:
+Response:
 ```
 Male name: اشکان محمدرضائیان
 Female name: مهسا امینی
@@ -61,7 +61,7 @@ print('Male name:', male)
 print('Female name:', female)
 print('Random name:', random)
 ```
-Example response:
+Response:
 ```
 Male name: Arsalan Mohammadi
 Female name: Sara Alipour
