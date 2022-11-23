@@ -1,5 +1,5 @@
 import os
-from random import randint, randrange
+from random import randrange
 
 
 def fullname_en(sex):
@@ -8,7 +8,7 @@ def fullname_en(sex):
     elif sex == 'female' or sex == 'f':
         sex = 1
     elif sex == 'random' or sex == 'r':
-        sex = randint(0, 1)
+        sex = randrange(2)
     else:
         return None
 
@@ -58,7 +58,7 @@ def fullname_fa(sex):
     elif sex == 'female' or sex == 'f':
         sex = 1
     elif sex == 'random' or sex == 'r':
-        sex = randint(0, 1)
+        sex = randrange(2)
     else:
         return None
 
