@@ -1,7 +1,7 @@
 # persian-names
 
 [![PyPI](https://img.shields.io/pypi/v/persian-names)](https://pypi.org/project/persian-names)
-![GitHub](https://img.shields.io/github/license/armanyazdi/persian-names)
+[![GitHub](https://img.shields.io/github/license/armanyazdi/persian-names)](https://pypi.org/project/persian-names)
 
 A Python library for generating random Persian (Farsi) names.
 
