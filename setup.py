@@ -9,10 +9,10 @@ setup(
     packages=['persian_names'],
     include_package_data=True,
     data_files=[('', [
-        'persian_names/data/male_en.txt',
         'persian_names/data/female_en.txt',
-        'persian_names/data/male_fa.txt',
-        'persian_names/data/female_fa.txt'
+        'persian_names/data/female_fa.txt',
+        'persian_names/data/male_en.txt',
+        'persian_names/data/male_fa.txt'
     ])],
     url='https://github.com/armanyazdi/persian-names',
     license='MIT',
