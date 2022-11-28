@@ -2,7 +2,8 @@ Afsaneh
 Aida
 Ailin
 Aisan
-Amineh
+Akram
+Amitis
 Ana
 Anahita
 Anashid
@@ -11,6 +12,7 @@ Anis
 Aniseh
 Aram
 Arezou
+Arghavan
 Ariana
 Armita
 Arshida
@@ -36,6 +38,7 @@ Benita
 Bina
 Bita
 Boshra
+Chakameh
 Darya
 Delaram
 Diba
@@ -74,6 +77,7 @@ Giti
 Gohar
 Goli
 Golrokh
+Golshan
 Golshifteh
 Hadis
 Hadiseh
@@ -149,6 +153,7 @@ Mozhgan
 Nafas
 Nafiseh
 Nahal
+Nahid
 Najla
 Narges
 Nasim
@@ -207,6 +212,7 @@ Sadaf
 Saghar
 Sahar
 Sahel
+Salomeh
 Sama
 Samaneh
 Samin
@@ -248,6 +254,7 @@ Solmaz
 Sonia
 Sousan
 Taban
+Tahoura
 Tannaz
 Tara
 Taraneh

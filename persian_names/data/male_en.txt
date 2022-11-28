@@ -12,6 +12,8 @@ Ahoura
 Akbar
 Alborz
 Ali
+Aliakbar
+Aliasghar
 Alireza
 Alvand
 Amin
@@ -42,6 +44,7 @@ Asghar
 Ashkan
 Aslan
 Atabak
+Azim
 Babak
 Bagher
 Bahador
@@ -76,7 +79,9 @@ Ezzatollah
 Faramarz
 Farbod
 Fardin
+Farhang
 Fariborz
+Farid
 Farrokh
 Farshad
 Farshid
@@ -100,6 +105,7 @@ Hamoun
 Hashem
 Hassan
 Heidar
+Hessam
 Hirbod
 Homayoun
 Hossein
@@ -124,6 +130,7 @@ Kaveh
 Kazem
 Keyhan
 Keyvan
+Khalil
 Khashayar
 Kian
 Kiarash
@@ -146,6 +153,7 @@ Mehrdad
 Mehrzad
 Meraj
 Meysam
+Mikaeil
 Milad
 Misagh
 Mobin
@@ -207,7 +215,9 @@ Sasan
 Sepehr
 Shahab
 Shahbaz
+Shahdad
 Shahin
+Shahram
 Shahrokh
 Shapour
 Shayan
@@ -227,6 +237,7 @@ Taher
 Tahmasb
 Tohid
 Vahid
+Yaghma
 Yaghoub
 Yahya
 Yaser
