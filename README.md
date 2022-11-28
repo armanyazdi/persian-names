@@ -5,8 +5,8 @@
 
 A Python library for generating random Persian (Farsi) names.
 
-`persian-names` generates semi-logical last names 
-(mixed popular Persian and Arabic names in Iran + routine last name suffixes.)
+This package generates frequently logical names 
+(a mix of popular Persian and Arabic names with common Persian family name suffixes).
 
 ## Installation
 
