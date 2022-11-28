@@ -2,7 +2,7 @@ import os
 from random import randrange
 
 
-def fullname_en(sex):
+def fullname_en(sex='r'):
     if sex == 'male' or sex == 'm':
         sex = 0
     elif sex == 'female' or sex == 'f':
@@ -13,18 +13,40 @@ def fullname_en(sex):
         return None
 
     path = os.path.dirname(__file__)
-    file = ['/data/male.txt', '/data/female.txt']
-    isfx = ['', '', '', '', '', '', '', '', '', 'pour', 'zadeh', 'far', 'fard', 'an', 'kia', 'rad', 'zand', 'khah']
-    nsfx = ['i', 'i', 'i', 'i', 'i', 'i', 'i', 'pour', 'zadeh', 'far', 'fard', 'khani', 'vand', 'lou']
+    file = ['male_en.txt', 'female_en.txt']
+    isfx = [
+        '', '', '', '', '', '', '', '', '', '',
+        'pour',
+        'zadeh',
+        'far',
+        'fard',
+        'an',
+        'kia',
+        'rad',
+        'zand',
+        'khah',
+        'nia'
+    ]
+    nsfx = [
+        'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
+        'pour',
+        'zadeh',
+        'far',
+        'fard',
+        'khani',
+        'vand',
+        'lou',
+        'nia'
+    ]
 
     def first(sex):
-        f = open(path + file[sex], 'r')
+        f = open(path + '/data/' + file[sex], 'r')
         names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        f = open(path + file[0], 'r')
+        f = open(path + '/data/' + file[0], 'r')
         names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last[1:] == 'ostafa' or last[1:] == 'ousa' or last[1:] == 'ahya':
@@ -52,7 +74,7 @@ def fullname_en(sex):
     return first(sex) + ' ' + last()
 
 
-def fullname_fa(sex):
+def fullname_fa(sex='r'):
     if sex == 'male' or sex == 'm':
         sex = 0
     elif sex == 'female' or sex == 'f':
@@ -63,18 +85,40 @@ def fullname_fa(sex):
         return None
 
     path = os.path.dirname(__file__)
-    file = ['/data/male_fa.txt', '/data/female_fa.txt']
-    isfx = ['', '', '', '', '', '', '', '', '', ' پور', ' زاده', ' فر', ' فرد', 'ان', ' کیا', ' راد', ' زند', ' خواه']
-    nsfx = ['ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', ' پور', ' زاده', ' فر', ' فرد', ' خانی', ' وند', ' لو']
+    file = ['male_fa.txt', 'female_fa.txt']
+    isfx = [
+        '', '', '', '', '', '', '', '', '', '',
+        ' پور',
+        ' زاده',
+        ' فر',
+        ' فرد',
+        'ان',
+        ' کیا',
+        ' راد',
+        ' زند',
+        ' خواه',
+        ' نیا'
+    ]
+    nsfx = [
+        'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
+        ' پور',
+        ' زاده',
+        ' فر',
+        ' فرد',
+        ' خانی',
+        ' وند',
+        ' لو',
+        ' نیا'
+    ]
 
     def first(sex):
-        f = open(path + file[sex], 'r')
+        f = open(path + '/data/' + file[sex], 'r')
         names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        f = open(path + file[0], 'r')
+        f = open(path + '/data/' + file[0], 'r')
         names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last == 'مرتضی' or last == 'مصطفی' or last == 'موسی':
