@@ -5,17 +5,20 @@
 
 A Python library for generating random Persian (Farsi) names.
 
-# Installation
+`persian-names` generates semi-logical last names 
+(mixed popular Persian and Arabic names in Iran + routine last name suffixes.)
+
+## Installation
 
 Install from [PyPI](https://pypi.org/project/persian-names) with pip by typing in your favorite terminal:
 
 `pip install persian-names`
 
-# Usage
+## Usage
 
 Let's take a look at what an example test case would look like using `persian-names`.
 
-#### Generate Persian names in Farsi:
+### Generate Persian names in Farsi:
 
 ```python
 import persian_names as pn
@@ -24,7 +27,9 @@ pn.fullname_fa('male')   # or pn.fullname_fa('m')
 pn.fullname_fa('female') # or pn.fullname_fa('f')
 pn.fullname_fa('random') # or pn.fullname_fa('r')
 ```
-Example:
+
+#### Example:
+
 ```python
 import persian_names as pn
 
@@ -37,7 +42,7 @@ print('Female name:', female) # Female name: مهسا امینی
 print('Random name:', random) # Random name: بیتا خسروی راد
 ```
 
-#### Generate Persian names in English:
+### Generate Persian names in English:
 
 ```python
 import persian_names as pn
@@ -46,7 +51,9 @@ pn.fullname_en('male')   # or pn.fullname_en('m')
 pn.fullname_en('female') # or pn.fullname_en('f')
 pn.fullname_en('random') # or pn.fullname_en('r')
 ```
-Example:
+
+#### Example:
+
 ```python
 import persian_names as pn
 
