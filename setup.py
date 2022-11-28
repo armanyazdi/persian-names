@@ -5,10 +5,15 @@ with open('./README.md', 'r') as f:
 
 setup(
     name='persian-names',
-    version='1.1.9',
+    version='1.2.0',
     packages=['persian_names'],
     include_package_data=True,
-    data_files=[('', ['persian_names/data/male.txt', 'persian_names/data/female.txt', 'persian_names/data/male_fa.txt', 'persian_names/data/female_fa.txt'])],
+    data_files=[('', [
+        'persian_names/data/male_en.txt',
+        'persian_names/data/female_en.txt',
+        'persian_names/data/male_fa.txt',
+        'persian_names/data/female_fa.txt'
+    ])],
     url='https://github.com/armanyazdi/persian-names',
     license='MIT',
     author='Arman Yazdi',
