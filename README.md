@@ -23,9 +23,9 @@ Let's take a look at what an example test case would look like using `persian-na
 ```python
 from persian_names import fullname_fa
 
-fullname_fa('male')   # or pn.fullname_fa('m')
-fullname_fa('female') # or pn.fullname_fa('f')
-fullname_fa('random') # or pn.fullname_fa('r')
+fullname_fa('male')   # or fullname_fa('m')
+fullname_fa('female') # or fullname_fa('f')
+fullname_fa('random') # or fullname_fa('r')
 ```
 
 #### Example:
@@ -43,9 +43,9 @@ print('Random:', fullname_fa('r')) # Random: بیتا خسروی راد
 ```python
 from persian_names import fullname_en
 
-fullname_en('male')   # or pn.fullname_en('m')
-fullname_en('female') # or pn.fullname_en('f')
-fullname_en('random') # or pn.fullname_en('r')
+fullname_en('male')   # or fullname_en('m')
+fullname_en('female') # or fullname_en('f')
+fullname_en('random') # or fullname_en('r')
 ```
 
 #### Example:
