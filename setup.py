@@ -5,7 +5,7 @@ with open('./README.md', 'r') as f:
 
 setup(
     name='persian-names',
-    version='1.2.1',
+    version='1.2.2',
     packages=['persian_names'],
     include_package_data=True,
     data_files=[('', [
