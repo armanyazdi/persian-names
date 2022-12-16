@@ -40,13 +40,13 @@ def fullname_en(sex='r'):
     ]
 
     def first(sex):
-        f = open(path + '/data/' + file[sex], 'r')
+        f = open(path + '/data/' + file[sex], 'r', encoding='utf8')
         names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        f = open(path + '/data/' + file[0], 'r')
+        f = open(path + '/data/' + file[0], 'r', encoding='utf8')
         names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last[1:] == 'ostafa' or last[1:] == 'ousa' or last[1:] == 'ahya':
@@ -112,13 +112,13 @@ def fullname_fa(sex='r'):
     ]
 
     def first(sex):
-        f = open(path + '/data/' + file[sex], 'r')
+        f = open(path + '/data/' + file[sex], 'r', encoding='utf8')
         names = f.read().split('\n')
         first = names[randrange(len(names))]
         return first
 
     def last():
-        f = open(path + '/data/' + file[0], 'r')
+        f = open(path + '/data/' + file[0], 'r', encoding='utf8')
         names = f.read().split('\n')
         last = names[randrange(len(names))]
         if last == 'مرتضی' or last == 'مصطفی' or last == 'موسی':
