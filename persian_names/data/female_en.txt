@@ -3,6 +3,7 @@ Aida
 Ailin
 Aisan
 Akram
+Ameneh
 Amitis
 Ana
 Anahita
@@ -35,6 +36,7 @@ Baran
 Behin
 Behnaz
 Benita
+Betisa
 Bina
 Bita
 Boshra
@@ -50,6 +52,7 @@ Elham
 Elika
 Elmira
 Elnaz
+Elsana
 Faezeh
 Falamak
 Farah
@@ -57,15 +60,16 @@ Farahnaz
 Faranak
 Fariba
 Farideh
+Farin
 Farkhondeh
 Farnaz
 Farnoush
 Farzaneh
 Fatemeh
 Fatima
+Felora
 Fereshteh
 Firouzeh
-Flora
 Forough
 Gandom
 Gelareh
@@ -167,6 +171,7 @@ Negara
 Negin
 Nika
 Niki
+Nikou
 Niloufar
 Niousha
 Noura
@@ -208,6 +213,7 @@ Rozhan
 Rozhin
 Rozhina
 Saba
+Saboura
 Sadaf
 Saghar
 Sahar
@@ -216,6 +222,7 @@ Salomeh
 Sama
 Samaneh
 Samin
+Samina
 Samira
 Sana
 Sanam
@@ -235,6 +242,7 @@ Shaghayegh
 Shahnaz
 Shahrzad
 Shakiba
+Shakila
 Shamim
 Shana
 Sheida
@@ -250,7 +258,9 @@ Simin
 Sofia
 Sogand
 Sogol
+Soheila
 Solmaz
+Sonia
 Sonia
 Sousan
 Taban

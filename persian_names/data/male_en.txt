@@ -86,6 +86,7 @@ Farrokh
 Farshad
 Farshid
 Farzad
+Farzam
 Farzin
 Fazel
 Ferdos
@@ -112,6 +113,7 @@ Hossein
 Houman
 Houshang
 Iman
+Iraj
 Issa
 Izad
 Jaber
@@ -178,6 +180,7 @@ Nariman
 Nasser
 Nassir
 Navid
+Nik
 Nikan
 Nima
 Norouz
@@ -218,6 +221,7 @@ Shahbaz
 Shahdad
 Shahin
 Shahram
+Shahriar
 Shahrokh
 Shapour
 Shayan
@@ -235,6 +239,7 @@ Soroush
 Taha
 Taher
 Tahmasb
+Tahmoures
 Tohid
 Vahid
 Yaghma
