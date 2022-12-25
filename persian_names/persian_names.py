@@ -14,7 +14,7 @@ def fullname_en(sex='r'):
 
     path = os.path.dirname(__file__)
     file = ['male_en.txt', 'female_en.txt']
-    isfx = [
+    suffix1 = [
         '', '', '', '', '', '', '', '', '', '',
         'pour',
         'zadeh',
@@ -27,7 +27,7 @@ def fullname_en(sex='r'):
         'khah',
         'nia'
     ]
-    nsfx = [
+    suffix2 = [
         'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
         'pour',
         'zadeh',
@@ -66,9 +66,9 @@ def fullname_en(sex='r'):
         elif len(last) > 10 and last[-1] != 'i':
             last += 'i'
         elif last[-1] == 'i':
-            last += isfx[randrange(len(isfx))]
+            last += suffix1[randrange(len(suffix1))]
         else:
-            last += nsfx[randrange(len(nsfx))]
+            last += suffix2[randrange(len(suffix2))]
         return last
 
     return first(sex) + ' ' + last()
@@ -86,7 +86,7 @@ def fullname_fa(sex='r'):
 
     path = os.path.dirname(__file__)
     file = ['male_fa.txt', 'female_fa.txt']
-    isfx = [
+    suffix1 = [
         '', '', '', '', '', '', '', '', '', '',
         ' پور',
         ' زاده',
@@ -99,7 +99,7 @@ def fullname_fa(sex='r'):
         ' خواه',
         ' نیا'
     ]
-    nsfx = [
+    suffix2 = [
         'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
         ' پور',
         ' زاده',
@@ -134,9 +134,9 @@ def fullname_fa(sex='r'):
         else:
             last += ['ی', ''][randrange(2)]
         if last[-1] == 'ی':
-            last += isfx[randrange(len(isfx))]
+            last += suffix1[randrange(len(suffix1))]
         else:
-            last += nsfx[randrange(len(nsfx))]
+            last += suffix2[randrange(len(suffix2))]
         return last
 
     return first(sex) + ' ' + last()
