@@ -21,7 +21,7 @@ Let's take a look at what an example test case would look like using `persian-na
 ### Generate Persian names in Farsi:
 
 ```python
-from persian_names import fullname_fa
+from persian_names import *
 
 fullname_fa('male')   # or fullname_fa('m')
 fullname_fa('female') # or fullname_fa('f')
@@ -31,7 +31,7 @@ fullname_fa('random') # or fullname_fa('r')
 #### Example:
 
 ```python
-from persian_names import fullname_fa
+from persian_names import *
 
 print('Male:', fullname_fa('m'))   # Male: اشکان محمدرضائیان
 print('Female:', fullname_fa('f')) # Female: مهسا امینی
@@ -41,7 +41,7 @@ print('Random:', fullname_fa('r')) # Random: بیتا خسروی راد
 ### Generate Persian names in English:
 
 ```python
-from persian_names import fullname_en
+from persian_names import *
 
 fullname_en('male')   # or fullname_en('m')
 fullname_en('female') # or fullname_en('f')
@@ -51,7 +51,7 @@ fullname_en('random') # or fullname_en('r')
 #### Example:
 
 ```python
-from persian_names import fullname_en
+from persian_names import *
 
 print('Male:', fullname_en('m'))   # Male: Arsalan Mohammadi
 print('Female:', fullname_en('f')) # Female: Sara Alipour
