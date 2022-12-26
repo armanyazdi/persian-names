@@ -11,6 +11,7 @@ Anashid
 Andia
 Anis
 Aniseh
+Anita
 Aram
 Arezou
 Arghavan
@@ -82,6 +83,7 @@ Gohar
 Goli
 Golrokh
 Golshan
+Golshid
 Golshifteh
 Hadis
 Hadiseh
@@ -121,6 +123,7 @@ Lida
 Maedeh
 Mahak
 Mahdis
+Mahgol
 Mahnaz
 Mahrokh
 Mahrou
@@ -129,6 +132,7 @@ Mahshad
 Mahshid
 Mahta
 Mahtab
+Mahvash
 Mahya
 Mandana
 Maneli
@@ -140,8 +144,10 @@ Masoumeh
 Mehdieh
 Mehrana
 Mehraneh
+Mehraveh
 Mehrnaz
 Mehrnoush
+Mehrvash
 Melika
 Melisa
 Mersana
@@ -208,6 +214,7 @@ Romina
 Roshan
 Roshanak
 Roya
+Roz
 Roza
 Rozhan
 Rozhin
@@ -245,6 +252,7 @@ Shakiba
 Shakila
 Shamim
 Shana
+Sharareh
 Sheida
 Shermin
 Shermineh
@@ -261,10 +269,12 @@ Sogol
 Soheila
 Solmaz
 Sonia
-Sonia
 Sousan
 Taban
+Tahmineh
 Tahoura
+Tala
+Talayeh
 Tannaz
 Tara
 Taraneh
