@@ -42,6 +42,7 @@ Arta
 Artin
 Arvand
 Arvin
+Arzhang
 Asghar
 Ashkan
 Aslan
@@ -66,6 +67,7 @@ Behrouz
 Behzad
 Benyamin
 Bizhan
+Borhan
 Borna
 Chavosh
 Danial
@@ -139,6 +141,7 @@ Kamyar
 Karim
 Kasra
 Kaveh
+Kavous
 Kazem
 Keyhan
 Keyvan
@@ -159,6 +162,7 @@ Mansour
 Masih
 Masoud
 Matin
+Mazdak
 Maziar
 Mehrab
 Mehrad
@@ -238,6 +242,7 @@ Shahin
 Shahram
 Shahriar
 Shahrokh
+Shantia
 Shapour
 Shayan
 Shaygan
