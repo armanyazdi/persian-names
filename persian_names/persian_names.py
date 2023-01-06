@@ -15,7 +15,7 @@ def fullname_en(sex='r'):
     path = os.path.dirname(__file__)
     file = ['male_en.txt', 'female_en.txt']
     sfx1 = [
-        '', '', '', '', '', '', '', '', '', '',
+        '', '', '', '', '', '', '', '', '', '', '',
         'pour',
         'zadeh',
         'far',
@@ -25,7 +25,8 @@ def fullname_en(sex='r'):
         'rad',
         'zand',
         'khah',
-        'nia'
+        'nia',
+        'mehr'
     ]
     sfx2 = [
         'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
@@ -87,7 +88,7 @@ def fullname_fa(sex='r'):
     path = os.path.dirname(__file__)
     file = ['male_fa.txt', 'female_fa.txt']
     sfx1 = [
-        '', '', '', '', '', '', '', '', '', '',
+        '', '', '', '', '', '', '', '', '', '', '',
         ' پور',
         ' زاده',
         ' فر',
@@ -97,7 +98,8 @@ def fullname_fa(sex='r'):
         ' راد',
         ' زند',
         ' خواه',
-        ' نیا'
+        ' نیا',
+        ' مهر'
     ]
     sfx2 = [
         'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
