@@ -32,7 +32,7 @@ def fullname_en(sex='r'):
         'mehr'
     ]
     more_suffixes = [
-        'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
+        'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
         'pour',
         'zadeh',
         'far',
@@ -40,7 +40,8 @@ def fullname_en(sex='r'):
         'khani',
         'vand',
         'lou',
-        'nia'
+        'nia',
+        'zehi'
     ]
 
     def firstname():
@@ -108,7 +109,7 @@ def fullname_fa(sex='r'):
         ' مهر'
     ]
     more_suffixes = [
-        'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
+        'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
         ' پور',
         ' زاده',
         ' فر',
@@ -116,7 +117,8 @@ def fullname_fa(sex='r'):
         ' خانی',
         ' وند',
         ' لو',
-        ' نیا'
+        ' نیا',
+        ' زهی'
     ]
 
     def firstname():
