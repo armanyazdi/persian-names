@@ -1,7 +1,7 @@
 # persian-names
 
-[![PyPI](https://img.shields.io/pypi/v/persian-names?style=for-the-badge&color=c9cbff&labelColor=302d41)](https://pypi.org/project/persian-names)
-[![GitHub](https://img.shields.io/github/license/armanyazdi/persian-names?style=for-the-badge&color=8cd5ca&labelColor=302d41)](https://pypi.org/project/persian-names)
+[![PyPI](https://img.shields.io/pypi/v/persian-names?style=for-the-badge)](https://pypi.org/project/persian-names)
+[![GitHub](https://img.shields.io/github/license/armanyazdi/persian-names?style=for-the-badge)](https://pypi.org/project/persian-names)
 
 A Python library for generating random Persian (Farsi) names.
 
@@ -18,7 +18,7 @@ Install from [PyPI](https://pypi.org/project/persian-names) with pip by typing i
 
 Let's take a look at what an example test case would look like using `persian-names`.
 
-### Generate Persian names in Farsi:
+### Generate Persian Full Names in Farsi:
 
 ```python
 from persian_names import *
@@ -38,7 +38,7 @@ print('Female:', fullname_fa('f')) # Female: مهسا امینی
 print('Random:', fullname_fa('r')) # Random: بیتا خسروی راد
 ```
 
-### Generate Persian names in English:
+### Generate Persian Full Names in English:
 
 ```python
 from persian_names import *
@@ -57,3 +57,7 @@ print('Male:', fullname_en('m'))   # Male: Arsalan Mohammadi
 print('Female:', fullname_en('f')) # Female: Sara Alipour
 print('Random:', fullname_en('r')) # Random: Danial Ferdosi
 ```
+
+## License
+
+`persian-names` is available under the [MIT license](https://github.com/armanyazdi/persian-names/blob/main/LICENSE).
