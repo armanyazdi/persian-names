@@ -25,6 +25,7 @@ Amirali
 Amiremad
 Amirhassan
 Amirhossein
+Amirmahdi
 Amirmohammad
 Amirreza
 Aram
@@ -124,7 +125,6 @@ Houman
 Houshang
 Iman
 Iraj
-Issa
 Izad
 Jaber
 Jafar
@@ -255,6 +255,7 @@ Sobhan
 Soheil
 Sohrab
 Soleiman
+Soltan
 Soroush
 Taha
 Taher
