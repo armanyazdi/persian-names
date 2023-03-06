@@ -1,10 +1,11 @@
 import os
-from random import randrange
+from random import randrange, randint
 
 path = os.path.dirname(__file__)
+files = ['male_en.txt', 'female_en.txt', 'male_fa.txt', 'female_fa.txt']
 
 
-def fullname_en(sex='r'):
+def firstname_en(sex='r'):
     sex = sex.lower()
 
     if sex == 'male' or sex == 'm':
@@ -16,9 +17,29 @@ def fullname_en(sex='r'):
     else:
         return None
 
-    files = ['male_en.txt', 'female_en.txt']
+    f = open(path + '/data/' + files[sex], 'r', encoding='utf8')
+    names = f.read().split('\n')
+    f.close()
+    first_name = names[randrange(len(names))]
+
+    return first_name
+
+
+def lastname_en():
+    # English Prefixes and Suffixes
+    some_prefixes = [
+        '', '', '', '',
+        'Mir',
+        'Agha',
+        'Shah',
+        'Haj',
+        'Haji',
+        'Sheikh',
+        'Mirza',
+        'Beig'
+    ]
     some_suffixes = [
-        '', '', '', '', '', '', '', '', '', '', '',
+        '', '', '', '', '', '', '', '', '', '', '', '', '',
         'pour',
         'zadeh',
         'far',
@@ -29,10 +50,12 @@ def fullname_en(sex='r'):
         'zand',
         'khah',
         'nia',
-        'mehr'
+        'mehr',
+        'nejad',
+        'bayat'
     ]
     more_suffixes = [
-        'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
+        'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
         'pour',
         'zadeh',
         'far',
@@ -41,61 +64,99 @@ def fullname_en(sex='r'):
         'vand',
         'lou',
         'nia',
-        'zehi'
+        'zehi',
+        'nejad',
+        'beigi'
     ]
+    arabic_names = []
 
-    def firstname():
-        f = open(path + '/data/' + files[sex], 'r', encoding='utf8')
-        names = f.read().split('\n')
-        f.close()
-        first_name = names[randrange(len(names))]
-        return first_name
+    f = open(path + '/data/' + files[0], 'r', encoding='utf8')
+    names = f.read().split('\n')
+    f.close()
+    last_name = names[randrange(len(names))]
 
-    def lastname():
-        f = open(path + '/data/' + files[0], 'r', encoding='utf8')
-        names = f.read().split('\n')
-        f.close()
-        last_name = names[randrange(len(names))]
-        if last_name[1:] == 'ostafa' or last_name[1:] == 'ousa' or last_name[1:] == 'ahya':
-            last_name += 'vi'
-        elif last_name[1:] == 'orteza':
-            last_name = last_name.replace('ez', 'az') + 'vi'
-        elif last_name[1:] == 'hosro':
-            last_name = last_name.replace('ro', 'ravi')
-        elif last_name[-1] == 'a' or last_name[-1] == 'o' or last_name[-1] == 'u':
-            last_name += 'ei'
-        elif last_name[-1] == 'i':
-            pass
+    for i in names[:23]:
+        arabic_names.append(i)
+
+    if last_name == 'Mostafa' or last_name == 'Mousa' or last_name == 'Yahya' or last_name == 'Kasra':
+        last_name += 'vi'
+    elif last_name == 'Morteza':
+        last_name = last_name.replace('ez', 'az') + 'vi'
+    elif last_name == 'Ali' or last_name == 'Mahdi':
+        last_name = last_name.replace('i', ['i', 'avi'][randrange(2)])
+    elif last_name == 'Khosro':
+        last_name = last_name.replace('ro', 'ravi')
+    elif last_name[-1] == 'a' or last_name[-1] == 'o' or last_name[-1] == 'u':
+        last_name += 'ei'
+    elif last_name[-1] == 'i':
+        pass
+    else:
+        last_name += ['i', ''][randrange(2)]
+
+    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
+        prefix = some_prefixes[randrange(len(some_prefixes))]
+        suffix = some_suffixes[randrange(len(some_suffixes))]
+
+        if suffix == "" and prefix != "" and prefix[-1] == last_name[0].lower():
+            last_name = prefix + ' ' + last_name
+        elif suffix == "":
+            last_name = prefix + last_name.lower()
         else:
-            last_name += ['i', ''][randrange(2)]
-        if len(last_name) > 10 and last_name[-1] == 'i':
-            last_name += ''
-        elif len(last_name) > 10 and last_name[-1] != 'i':
-            last_name += 'i'
-        elif last_name[-1] == 'i':
-            last_name += some_suffixes[randrange(len(some_suffixes))]
-        else:
-            last_name += more_suffixes[randrange(len(more_suffixes))]
-        return last_name
+            last_name += suffix
+    elif len(last_name) > 10 and last_name[-1] == 'i':
+        last_name += ''
+    elif len(last_name) > 10 and last_name[-1] != 'i':
+        last_name += 'i'
+    elif last_name[-1] == 'i':
+        last_name += some_suffixes[randrange(len(some_suffixes))]
+    else:
+        last_name += more_suffixes[randrange(len(more_suffixes))]
 
-    return firstname() + ' ' + lastname()
+    while last_name.lower().endswith('ali') or last_name.lower().endswith('mahdi') or last_name == 'Mani' or last_name == 'Gholi':
+        last_name += some_suffixes[randrange(len(some_suffixes))]
+
+    return last_name
 
 
-def fullname_fa(sex='r'):
+def fullname_en(sex='r'):
+    return firstname_en(sex) + ' ' + lastname_en()
+
+
+def firstname_fa(sex='r'):
     sex = sex.lower()
 
     if sex == 'male' or sex == 'm':
-        sex = 0
+        sex = 2
     elif sex == 'female' or sex == 'f':
-        sex = 1
+        sex = 3
     elif sex == 'random' or sex == 'r':
-        sex = randrange(2)
+        sex = randint(2, 3)
     else:
         return None
 
-    files = ['male_fa.txt', 'female_fa.txt']
+    f = open(path + '/data/' + files[sex], 'r', encoding='utf8')
+    names = f.read().split('\n')
+    f.close()
+    first_name = names[randrange(len(names))]
+
+    return first_name
+
+
+def lastname_fa():
+    # Farsi Prefixes and Suffixes
+    some_prefixes = [
+        '', '', '', '',
+        'میر',
+        'آقا',
+        ' شاه ',
+        ' حاج ',
+        ' حاجی ',
+        ' شیخ ',
+        'میرزا ',
+        'بیگ '
+    ]
     some_suffixes = [
-        '', '', '', '', '', '', '', '', '', '', '',
+        '', '', '', '', '', '', '', '', '', '', '', '', '',
         ' پور',
         ' زاده',
         ' فر',
@@ -106,10 +167,12 @@ def fullname_fa(sex='r'):
         ' زند',
         ' خواه',
         ' نیا',
-        ' مهر'
+        ' مهر',
+        ' نژاد',
+        ' بیات'
     ]
     more_suffixes = [
-        'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
+        'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی', 'ی',
         ' پور',
         ' زاده',
         ' فر',
@@ -118,37 +181,54 @@ def fullname_fa(sex='r'):
         ' وند',
         ' لو',
         ' نیا',
-        ' زهی'
+        ' زهی',
+        ' نژاد',
+        ' بیگی'
     ]
+    arabic_names = []
 
-    def firstname():
-        f = open(path + '/data/' + files[sex], 'r', encoding='utf8')
-        names = f.read().split('\n')
-        f.close()
-        first_name = names[randrange(len(names))]
-        return first_name
+    f = open(path + '/data/' + files[2], 'r', encoding='utf8')
+    names = f.read().split('\n')
+    f.close()
+    last_name = names[randrange(len(names))]
 
-    def lastname():
-        f = open(path + '/data/' + files[0], 'r', encoding='utf8')
-        names = f.read().split('\n')
-        f.close()
-        last_name = names[randrange(len(names))]
-        if last_name == 'مرتضی' or last_name == 'مصطفی' or last_name == 'موسی':
-            last_name = last_name.replace('ی', 'وی')
-        elif last_name == 'یحیی':
-            last_name = last_name.replace('یی', 'یوی')
-        elif last_name == 'خسرو':
-            pass
-        elif last_name[-1] == 'ا' or last_name[-1] == 'و':
-            last_name += 'ئی'
-        elif last_name[-1] == 'ی':
-            pass
+    for i in names[:23]:
+        arabic_names.append(i)
+
+    if last_name == 'مرتضی' or last_name == 'مصطفی' or last_name == 'موسی' or last_name == 'کسری':
+        last_name = last_name.replace('ی', 'وی')
+    elif last_name == 'یحیی':
+        last_name = last_name.replace('یی', 'یوی')
+    elif last_name == 'علی' or last_name == 'مهدی':
+        last_name = last_name.replace('ی', ['ی', 'وی'][randrange(2)])
+    elif last_name == 'خسرو':
+        pass
+    elif last_name[-1] == 'ا' or last_name[-1] == 'و':
+        last_name += 'یی'
+    elif last_name[-1] == 'ی':
+        pass
+    else:
+        last_name += ['ی', ''][randrange(2)]
+
+    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
+        prefix = some_prefixes[randrange(len(some_prefixes))]
+        suffix = some_suffixes[randrange(len(some_suffixes))]
+
+        if suffix == "":
+            last_name = prefix + last_name
         else:
-            last_name += ['ی', ''][randrange(2)]
-        if last_name[-1] == 'ی':
-            last_name += some_suffixes[randrange(len(some_suffixes))]
-        else:
-            last_name += more_suffixes[randrange(len(more_suffixes))]
-        return last_name
+            last_name += suffix
 
-    return firstname() + ' ' + lastname()
+    elif last_name[-1] == 'ی':
+        last_name += some_suffixes[randrange(len(some_suffixes))]
+    else:
+        last_name += more_suffixes[randrange(len(more_suffixes))]
+
+    while last_name.endswith('علی') or last_name.endswith('مهدی') or last_name == 'مانی' or last_name == 'قلی':
+        last_name += some_suffixes[randrange(len(some_suffixes))]
+
+    return last_name
+
+
+def fullname_fa(sex='r'):
+    return firstname_fa(sex) + ' ' + lastname_fa()
