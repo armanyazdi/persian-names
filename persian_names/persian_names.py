@@ -28,9 +28,11 @@ def firstname_en(sex='r'):
 def lastname_en():
     # English Prefixes and Suffixes
     some_prefixes = [
-        '', '', '', '',
+        '', '', '', '', '',
         'Mir',
         'Agha',
+        'Pour',
+        'Nour',
         'Shah',
         'Haj',
         'Haji',
@@ -103,6 +105,8 @@ def lastname_en():
             last_name = prefix + last_name.lower()
         else:
             last_name += suffix
+    elif (len(last_name) <= 5 and last_name[-1] == 'i') or last_name.lower().endswith('ali') or last_name.lower().endswith('mahdi'):
+        last_name += ['pour', 'zadeh', 'far', 'fard', 'an', 'kia', 'khani', 'vand', 'nia', 'nejad', 'beigi'][randrange(11)]
     elif len(last_name) > 10 and last_name[-1] == 'i':
         last_name += ''
     elif len(last_name) > 10 and last_name[-1] != 'i':
@@ -111,9 +115,6 @@ def lastname_en():
         last_name += some_suffixes[randrange(len(some_suffixes))]
     else:
         last_name += more_suffixes[randrange(len(more_suffixes))]
-
-    while last_name.lower().endswith('ali') or last_name.lower().endswith('mahdi') or last_name == 'Mani' or last_name == 'Gholi':
-        last_name += some_suffixes[randrange(len(some_suffixes))]
 
     return last_name
 
@@ -145,9 +146,11 @@ def firstname_fa(sex='r'):
 def lastname_fa():
     # Farsi Prefixes and Suffixes
     some_prefixes = [
-        '', '', '', '',
+        '', '', '', '', '',
         'میر',
         'آقا',
+        'پور',
+        'نور',
         'شاه ',
         'حاج ',
         'حاجی ',
@@ -218,14 +221,12 @@ def lastname_fa():
             last_name = prefix + last_name
         else:
             last_name += suffix
-
+    elif (len(last_name) <= 4 and last_name[-1] == 'ی') or last_name.endswith('علی') or last_name.endswith('مهدی'):
+        last_name += [' پور', ' زاده', ' فر', ' فرد', 'ان', ' کیا', ' خانی', ' وند', ' نیا', ' نژاد', ' بیگی'][randrange(11)]
     elif last_name[-1] == 'ی':
         last_name += some_suffixes[randrange(len(some_suffixes))]
     else:
         last_name += more_suffixes[randrange(len(more_suffixes))]
-
-    while last_name.endswith('علی') or last_name.endswith('مهدی') or last_name == 'مانی' or last_name == 'قلی':
-        last_name += some_suffixes[randrange(len(some_suffixes))]
 
     return last_name
 
