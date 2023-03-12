@@ -28,11 +28,11 @@ def firstname_en(sex='r'):
 def lastname_en():
     # English Prefixes and Suffixes
     some_prefixes = [
-        '', '', '', '', '',
         'Mir',
         'Agha',
         'Pour',
         'Nour',
+        'Amir',
         'Shah',
         'Haj',
         'Haji',
@@ -70,7 +70,7 @@ def lastname_en():
         'nejad',
         'beigi'
     ]
-    arabic_names = []
+    some_names = []
 
     f = open(path + '/data/' + files[0], 'r', encoding='utf8')
     names = f.read().split('\n')
@@ -78,7 +78,7 @@ def lastname_en():
     last_name = names[randrange(len(names))]
 
     for i in names[:23]:
-        arabic_names.append(i)
+        some_names.append(i)
 
     if last_name == 'Mostafa' or last_name == 'Mousa' or last_name == 'Yahya' or last_name == 'Kasra':
         last_name += 'vi'
@@ -95,13 +95,13 @@ def lastname_en():
     else:
         last_name += ['i', ''][randrange(2)]
 
-    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
+    if last_name[:-1] in some_names or last_name[:-2] in some_names:
         prefix = some_prefixes[randrange(len(some_prefixes))]
         suffix = some_suffixes[randrange(len(some_suffixes))]
 
-        if suffix == "" and prefix != "" and prefix[-1] == last_name[0].lower():
+        if suffix == '' and prefix != '' and prefix[-1] == last_name[0].lower():
             last_name = prefix + ' ' + last_name
-        elif suffix == "":
+        elif suffix == '':
             last_name = prefix + last_name.lower()
         else:
             last_name += suffix
@@ -146,11 +146,11 @@ def firstname_fa(sex='r'):
 def lastname_fa():
     # Farsi Prefixes and Suffixes
     some_prefixes = [
-        '', '', '', '', '',
         'میر',
         'آقا',
         'پور',
         'نور',
+        'امیر',
         'شاه ',
         'حاج ',
         'حاجی ',
@@ -188,7 +188,7 @@ def lastname_fa():
         ' نژاد',
         ' بیگی'
     ]
-    arabic_names = []
+    some_names = []
 
     f = open(path + '/data/' + files[2], 'r', encoding='utf8')
     names = f.read().split('\n')
@@ -196,7 +196,7 @@ def lastname_fa():
     last_name = names[randrange(len(names))]
 
     for i in names[:23]:
-        arabic_names.append(i)
+        some_names.append(i)
 
     if last_name == 'مرتضی' or last_name == 'مصطفی' or last_name == 'موسی' or last_name == 'کسری':
         last_name = last_name.replace('ی', 'وی')
@@ -213,11 +213,11 @@ def lastname_fa():
     else:
         last_name += ['ی', ''][randrange(2)]
 
-    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
+    if last_name[:-1] in some_names or last_name[:-2] in some_names:
         prefix = some_prefixes[randrange(len(some_prefixes))]
         suffix = some_suffixes[randrange(len(some_suffixes))]
 
-        if suffix == "":
+        if suffix == '':
             last_name = prefix + last_name
         else:
             last_name += suffix
