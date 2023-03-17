@@ -36,6 +36,8 @@ Azar
 Azin
 Azita
 Bahar
+Bahara
+Baharak
 Bahareh
 Banafsheh
 Baran
@@ -285,6 +287,8 @@ Sogol
 Soheila
 Solmaz
 Sonia
+Soraya
+Soudeh
 Sousan
 Taban
 Tahmineh
