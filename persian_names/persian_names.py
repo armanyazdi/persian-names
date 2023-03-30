@@ -33,14 +33,20 @@ def lastname_en():
         'Abou',
         'Pour',
         'Nour',
+        'Nasr',
+        'Zand',
         'Seyed',
         'Amir',
         'Aziz',
         'Shah',
+        'Nik',
         'Haj',
         'Haji',
         'Sheikh',
         'Mirza',
+        'Ostad',
+        'Malek',
+        'Khan',
         'Beig',
         'Arab'
     ]
@@ -62,6 +68,7 @@ def lastname_en():
         'nejad', '',
         'bayat', '',
         'yekta' '',
+        'sabet' '',
         'azad', '',
         'zare', '',
     ]
@@ -79,17 +86,24 @@ def lastname_en():
         'beigi', 'i',
         'zare', 'i',
     ]
-    some_names = []
+    arabic_names = []
+    illegal_names = []
 
     f = open(path + '/data/' + files[0], 'r', encoding='utf8')
     names = f.read().split('\n')
     f.close()
     last_name = names[randrange(len(names))]
 
-    for i in names[:23]:
-        some_names.append(i)
+    for i in names[:26]:
+        arabic_names.append(i)
 
-    if last_name == 'Mostafa' or last_name == 'Mousa' or last_name == 'Yahya' or last_name == 'Kasra':
+    for i in names[26:49]:
+        illegal_names.append(i)
+
+    while last_name in illegal_names:
+        last_name = names[randrange(len(names))]
+
+    if last_name == 'Mostafa' or last_name == 'Mousa' or last_name == 'Yahya' or last_name == 'Kasra' or last_name == 'Mojtaba':
         last_name += 'vi'
     elif last_name == 'Morteza':
         last_name = last_name.replace('ez', 'az') + 'vi'
@@ -104,7 +118,7 @@ def lastname_en():
     else:
         last_name += ['i', ''][randrange(2)]
 
-    if last_name[:-1] in some_names or last_name[:-2] in some_names:
+    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
         prefix = some_prefixes[randrange(len(some_prefixes))]
         suffix = some_suffixes[randrange(len(some_suffixes))]
 
@@ -160,14 +174,20 @@ def lastname_fa():
         'ابو',
         'پور',
         'نور',
+        'نصر',
+        'زند',
         'سید',
         'امیر',
         'عزیز',
         'شاه ',
+        'نیک ',
         'حاج ',
         'حاجی ',
         'شیخ ',
         'میرزا ',
+        'استاد ',
+        'ملک ',
+        'خان ',
         'بیگ ',
         'عرب '
     ]
@@ -189,6 +209,7 @@ def lastname_fa():
         ' نژاد', '',
         ' بیات', '',
         ' یکتا', '',
+        ' ثابت', '',
         ' آزاد', '',
         ' زارع', '',
     ]
@@ -206,7 +227,8 @@ def lastname_fa():
         ' بیگی', 'ی',
         ' زارع', 'ی',
     ]
-    some_names = []
+    arabic_names = []
+    illegal_names = []
 
     f = open(path + '/data/' + files[2], 'r', encoding='utf8')
     names = f.read().split('\n')
@@ -214,9 +236,15 @@ def lastname_fa():
     last_name = names[randrange(len(names))]
 
     for i in names[:23]:
-        some_names.append(i)
+        arabic_names.append(i)
 
-    if last_name == 'مرتضی' or last_name == 'مصطفی' or last_name == 'موسی' or last_name == 'کسری':
+    for i in names[26:49]:
+        illegal_names.append(i)
+
+    while last_name in illegal_names:
+        last_name = names[randrange(len(names))]
+
+    if last_name == 'مرتضی' or last_name == 'مصطفی' or last_name == 'موسی' or last_name == 'کسری' or last_name == 'مجتبی':
         last_name = last_name.replace('ی', 'وی')
     elif last_name == 'یحیی':
         last_name = last_name.replace('یی', 'یوی')
@@ -231,7 +259,7 @@ def lastname_fa():
     else:
         last_name += ['ی', ''][randrange(2)]
 
-    if last_name[:-1] in some_names or last_name[:-2] in some_names:
+    if last_name[:-1] in arabic_names or last_name[:-2] in arabic_names:
         prefix = some_prefixes[randrange(len(some_prefixes))]
         suffix = some_suffixes[randrange(len(some_suffixes))]
 
