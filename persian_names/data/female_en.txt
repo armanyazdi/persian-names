@@ -22,8 +22,10 @@ Arezou
 Arghavan
 Ariana
 Armita
+Arnika
 Arshida
 Asal
+Asha
 Asieh
 Atefeh
 Atena
@@ -128,6 +130,7 @@ Leila
 Leili
 Liana
 Lida
+Linda
 Maedeh
 Mahak
 Mahboubeh
@@ -175,6 +178,7 @@ Mozhgan
 Nadia
 Nafas
 Nafiseh
+Naghmeh
 Nahal
 Nahid
 Najla
@@ -184,6 +188,7 @@ Nasrin
 Nastaran
 Nazanin
 Nazila
+Nazli
 Neda
 Negar
 Negara
