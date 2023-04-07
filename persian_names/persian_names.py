@@ -42,6 +42,7 @@ def lastname_en():
         'Nik',
         'Haj',
         'Haji',
+        'Soufi',
         'Sheikh',
         'Mirza',
         'Ostad',
@@ -71,6 +72,7 @@ def lastname_en():
         'sabet' '',
         'azad', '',
         'zare', '',
+        'moghaddam', '',
     ]
     more_suffixes = [
         'pour', 'i',
@@ -97,7 +99,7 @@ def lastname_en():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:49]:
+    for i in names[26:50]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
@@ -183,6 +185,7 @@ def lastname_fa():
         'نیک ',
         'حاج ',
         'حاجی ',
+        'صوفی ',
         'شیخ ',
         'میرزا ',
         'استاد ',
@@ -212,6 +215,7 @@ def lastname_fa():
         ' ثابت', '',
         ' آزاد', '',
         ' زارع', '',
+        ' مقدم', '',
     ]
     more_suffixes = [
         ' پور', 'ی',
@@ -235,10 +239,10 @@ def lastname_fa():
     f.close()
     last_name = names[randrange(len(names))]
 
-    for i in names[:23]:
+    for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:49]:
+    for i in names[26:50]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
