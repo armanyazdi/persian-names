@@ -43,6 +43,8 @@ def lastname_en():
         'Haj',
         'Haji',
         'Soufi',
+        'Afzal',
+        'Fazel',
         'Sheikh',
         'Mirza',
         'Ostad',
@@ -73,6 +75,7 @@ def lastname_en():
         'azad', '',
         'zare', '',
         'moghaddam', '',
+        'roshan', '',
     ]
     more_suffixes = [
         'pour', 'i',
@@ -99,7 +102,7 @@ def lastname_en():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:50]:
+    for i in names[26:51]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
@@ -186,6 +189,8 @@ def lastname_fa():
         'حاج ',
         'حاجی ',
         'صوفی ',
+        'افضل ',
+        'فاضل ',
         'شیخ ',
         'میرزا ',
         'استاد ',
@@ -216,6 +221,7 @@ def lastname_fa():
         ' آزاد', '',
         ' زارع', '',
         ' مقدم', '',
+        ' روشن', '',
     ]
     more_suffixes = [
         ' پور', 'ی',
@@ -242,7 +248,7 @@ def lastname_fa():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:50]:
+    for i in names[26:51]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
