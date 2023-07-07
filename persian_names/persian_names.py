@@ -75,7 +75,7 @@ def lastname_en():
         'azad', '',
         'zare', '',
         'moghaddam', '',
-        'roshan', '',
+        'tabar', '',
     ]
     more_suffixes = [
         'pour', 'i',
@@ -90,6 +90,7 @@ def lastname_en():
         'nejad', 'i',
         'beigi', 'i',
         'zare', 'i',
+        'tabar', 'i',
     ]
     arabic_names = []
     illegal_names = []
@@ -221,7 +222,7 @@ def lastname_fa():
         ' آزاد', '',
         ' زارع', '',
         ' مقدم', '',
-        ' روشن', '',
+        ' تبار', '',
     ]
     more_suffixes = [
         ' پور', 'ی',
@@ -236,6 +237,7 @@ def lastname_fa():
         ' نژاد', 'ی',
         ' بیگی', 'ی',
         ' زارع', 'ی',
+        ' تبار', 'ی',
     ]
     arabic_names = []
     illegal_names = []
