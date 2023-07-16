@@ -34,7 +34,7 @@ fullname_fa('random') # or fullname_fa('r')
 from persian_names import fullname_fa
 
 print(fullname_fa('m')) # اشکان محمدرضائیان
-print(fullname_fa('f')) # مهسا امینی
+print(fullname_fa('f')) # مهسا امیری
 print(fullname_fa('r')) # بیتا خسروی راد
 ```
 
