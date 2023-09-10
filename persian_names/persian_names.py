@@ -38,6 +38,7 @@ def lastname_en():
         'Seyed',
         'Amir',
         'Aziz',
+        'Sayad',
         'Shah',
         'Nik',
         'Haj',
@@ -51,7 +52,8 @@ def lastname_en():
         'Malek',
         'Khan',
         'Beig',
-        'Arab'
+        'Arab',
+        'Manesh'
     ]
     some_suffixes = [
         'pour', '',
@@ -75,7 +77,12 @@ def lastname_en():
         'azad', '',
         'zare', '',
         'moghaddam', '',
+        'roshan', '',
         'tabar', '',
+        'rashed', '',
+        'dana', '',
+        'zadegan', '',
+        'manesh', ''
     ]
     more_suffixes = [
         'pour', 'i',
@@ -91,6 +98,7 @@ def lastname_en():
         'beigi', 'i',
         'zare', 'i',
         'tabar', 'i',
+        'manesh', 'i'
     ]
     arabic_names = []
     illegal_names = []
@@ -103,7 +111,7 @@ def lastname_en():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:51]:
+    for i in names[26:59]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
@@ -185,6 +193,7 @@ def lastname_fa():
         'سید',
         'امیر',
         'عزیز',
+        'صیاد',
         'شاه ',
         'نیک ',
         'حاج ',
@@ -198,7 +207,8 @@ def lastname_fa():
         'ملک ',
         'خان ',
         'بیگ ',
-        'عرب '
+        'عرب ',
+        'منش '
     ]
     some_suffixes = [
         ' پور', '',
@@ -222,7 +232,12 @@ def lastname_fa():
         ' آزاد', '',
         ' زارع', '',
         ' مقدم', '',
+        ' روشن', "",
         ' تبار', '',
+        ' راشد', '',
+        ' دانا', '',
+        ' زادگان', '',
+        ' منش', ''
     ]
     more_suffixes = [
         ' پور', 'ی',
@@ -238,6 +253,7 @@ def lastname_fa():
         ' بیگی', 'ی',
         ' زارع', 'ی',
         ' تبار', 'ی',
+        ' منش', 'ی'
     ]
     arabic_names = []
     illegal_names = []
@@ -250,7 +266,7 @@ def lastname_fa():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:51]:
+    for i in names[26:59]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
