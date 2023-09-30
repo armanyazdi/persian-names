@@ -27,6 +27,8 @@ Arshida
 Asal
 Asha
 Asieh
+Asma
+Asra
 Atefeh
 Atena
 Atousa
@@ -43,6 +45,7 @@ Baharak
 Bahareh
 Banafsheh
 Baran
+Bavan
 Behin
 Behnaz
 Benita
@@ -64,6 +67,7 @@ Elmira
 Elnaz
 Elsana
 Faezeh
+Fahimeh
 Falamak
 Farah
 Farahnaz
@@ -81,7 +85,6 @@ Felora
 Fereshteh
 Firouzeh
 Forough
-Forouzan
 Gandom
 Gelareh
 Ghazal
@@ -159,6 +162,8 @@ Masoumeh
 Mehdieh
 Mehrana
 Mehraneh
+Mehrasa
+Mehrsa
 Mehraveh
 Mehrdokht
 Mehrnaz
@@ -227,6 +232,8 @@ Pouneh
 Poupak
 Pouran
 Raha
+Raheleh
+Rahil
 Raspina
 Rasta
 Raya
@@ -245,9 +252,11 @@ Rozhina
 Saba
 Saboura
 Sadaf
+Saeideh
 Saghar
 Sahar
 Sahel
+Sahra
 Salomeh
 Sama
 Samaneh
@@ -308,6 +317,7 @@ Taraneh
 Tarlan
 Tina
 Toranj
+Vahideh
 Vanda
 Viana
 Vida
