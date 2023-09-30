@@ -29,6 +29,8 @@ def lastname_en():
     # English Prefixes and Suffixes
     some_prefixes = [
         'Mir',
+        'Pir',
+        'Yar',
         'Agha',
         'Abou',
         'Pour',
@@ -39,6 +41,7 @@ def lastname_en():
         'Amir',
         'Aziz',
         'Sayad',
+        'Zahed',
         'Shah',
         'Nik',
         'Haj',
@@ -82,7 +85,8 @@ def lastname_en():
         'rashed', '',
         'dana', '',
         'zadegan', '',
-        'manesh', ''
+        'manesh', '',
+        'yar', ''
     ]
     more_suffixes = [
         'pour', 'i',
@@ -98,7 +102,8 @@ def lastname_en():
         'beigi', 'i',
         'zare', 'i',
         'tabar', 'i',
-        'manesh', 'i'
+        'manesh', 'i',
+        'pourian', 'i'
     ]
     arabic_names = []
     illegal_names = []
@@ -111,7 +116,7 @@ def lastname_en():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:59]:
+    for i in names[26:60]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
@@ -184,6 +189,8 @@ def lastname_fa():
     # Farsi Prefixes and Suffixes
     some_prefixes = [
         'میر',
+        'پیر',
+        'یار',
         'آقا',
         'ابو',
         'پور',
@@ -194,6 +201,7 @@ def lastname_fa():
         'امیر',
         'عزیز',
         'صیاد',
+        'زاهد',
         'شاه ',
         'نیک ',
         'حاج ',
@@ -237,7 +245,8 @@ def lastname_fa():
         ' راشد', '',
         ' دانا', '',
         ' زادگان', '',
-        ' منش', ''
+        ' منش', '',
+        ' یار', ''
     ]
     more_suffixes = [
         ' پور', 'ی',
@@ -253,7 +262,8 @@ def lastname_fa():
         ' بیگی', 'ی',
         ' زارع', 'ی',
         ' تبار', 'ی',
-        ' منش', 'ی'
+        ' منش', 'ی',
+        ' پوریان', 'ی'
     ]
     arabic_names = []
     illegal_names = []
@@ -266,7 +276,7 @@ def lastname_fa():
     for i in names[:26]:
         arabic_names.append(i)
 
-    for i in names[26:59]:
+    for i in names[26:60]:
         illegal_names.append(i)
 
     while last_name in illegal_names:
