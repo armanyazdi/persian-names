@@ -8,6 +8,8 @@ A Python library for generating random Persian (Farsi) names.
 This package generates frequently logical names 
 (a mix of popular Persian and Arabic names with common Persian family name suffixes).
 
+Note: `persian-names` generates **90,000,000** unique full names (As Iran population in 2024) in less than 3 minutes.
+
 ## Installation
 
 Install from [PyPI](https://pypi.org/project/persian-names) with pip by typing in your favorite terminal:
@@ -34,7 +36,7 @@ fullname_fa('random') # or fullname_fa('r')
 from persian_names import fullname_fa
 
 print(fullname_fa('m')) # اشکان محمدرضائیان
-print(fullname_fa('f')) # مهسا امیری
+print(fullname_fa('f')) # مهسا امیری تهرانی
 print(fullname_fa('r')) # بیتا خسروی راد
 ```
 
@@ -55,7 +57,7 @@ from persian_names import fullname_en
 
 print(fullname_en('m')) # Arsalan Mohammadi
 print(fullname_en('f')) # Sara Alipour
-print(fullname_en('r')) # Danial Ferdosi
+print(fullname_en('r')) # Danial Ferdosi Khorasani
 ```
 
 ### Generate First Names and Last Names in Farsi:
@@ -107,6 +109,14 @@ print(firstname_en('f')) # Darya
 print(firstname_en('r')) # Baran
 print(lastname_en())     # Bakhtiarizadeh
 ```
+
+## Issues
+
+Feel free to submit issues and enhancement requests.
+
+## Contributing
+
+Feel free to contribute names database with your kindly pull requests.
 
 ## License
 
