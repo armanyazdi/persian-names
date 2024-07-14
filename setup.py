@@ -5,14 +5,16 @@ with open('./README.md', 'r') as f:
 
 setup(
     name='persian-names',
-    version='1.4.1',
+    version='1.5.0',
     packages=['persian_names'],
     include_package_data=True,
     data_files=[('', [
         'persian_names/data/female_en.txt',
         'persian_names/data/female_fa.txt',
         'persian_names/data/male_en.txt',
-        'persian_names/data/male_fa.txt'
+        'persian_names/data/male_fa.txt',
+        'persian_names/data/region_en.txt',
+        'persian_names/data/region_fa.txt'
     ])],
     url='https://github.com/armanyazdi/persian-names',
     license='MIT',
@@ -35,6 +37,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Localization'
