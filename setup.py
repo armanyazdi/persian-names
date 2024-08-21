@@ -5,7 +5,7 @@ with open('./README.md', 'r') as f:
 
 setup(
     name='persian-names',
-    version='1.5.0',
+    version='1.5.1',
     packages=['persian_names'],
     include_package_data=True,
     data_files=[('', [
@@ -19,7 +19,7 @@ setup(
     url='https://github.com/armanyazdi/persian-names',
     license='MIT',
     author='Arman Yazdi',
-    description='A Python library for generating random Persian (Farsi) names.',
+    description='A Python package for generating random Persian (Farsi) names.',
     long_description=readme,
     long_description_content_type='text/markdown',
     keywords='persian names, farsi names, iranian names, name generator',
