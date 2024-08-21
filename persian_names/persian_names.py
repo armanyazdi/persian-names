@@ -123,7 +123,7 @@ more_suffixes_en = [
 # Generate a random English last name
 def lastname_en():
     # Lists of names to exclude or treat specially
-    illegal_names = male_names_en[27:61]
+    illegal_names = male_names_en[27:62]
     arabic_names = male_names_en[:27]
 
     # Select a random last name, ensuring it's not in the illegal list
@@ -282,7 +282,7 @@ more_suffixes_fa = [
 # Generate a random Farsi last name
 def lastname_fa():
     # Lists of names to exclude or treat specially
-    illegal_names = male_names_fa[27:61]
+    illegal_names = male_names_fa[27:62]
     arabic_names = male_names_fa[:27]
 
     # Select a random last name, ensuring it's not in the illegal list
