@@ -29,6 +29,7 @@ Asha
 Asieh
 Asma
 Asra
+Arefeh
 Atefeh
 Atena
 Atousa
@@ -38,6 +39,7 @@ Avina
 Azadeh
 Azar
 Azin
+Azindokht
 Azita
 Bahar
 Bahara
@@ -93,7 +95,9 @@ Gisou
 Gita
 Giti
 Gohar
+Golbou
 Goli
+Golnar
 Golrokh
 Golshan
 Golshid
@@ -160,7 +164,7 @@ Maria
 Maryam
 Marzieh
 Masoumeh
-Mehdieh
+Mahdieh
 Mehrana
 Mehraneh
 Mehrasa
@@ -178,6 +182,7 @@ Mina
 Minou
 Mitra
 Mobina
+Mohaddeseh
 Mona
 Morvarid
 Mozhan
@@ -206,6 +211,7 @@ Niki
 Nikou
 Niloufar
 Niousha
+Nona
 Nour
 Noura
 Noushin
